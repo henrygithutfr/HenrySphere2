@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "name": "henrysphere",
+  "version": "1.0.0",
+  "description": "henrysphere backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrygithutfr/HenrySphere2.git"
+  },
+  "author": "henry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrygithutfr/HenrySphere2/issues"
+  },
+  "homepage": "https://github.com/henrygithutfr/HenrySphere2#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.1",
+    "node": "^26.1.0",
+    "nodemon": "^3.1.14"
+  }
+}

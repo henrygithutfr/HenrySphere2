@@ -14,7 +14,7 @@ function Blog() {
       <div>
         {blogs.map((block) => {
           return (
-            <div key={block.id}>
+            <div key={block._id}>
               <img src={block.cover}/>
               <h1>{block.title}</h1>
               <span>{block.excerpt}</span>

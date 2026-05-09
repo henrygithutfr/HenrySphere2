@@ -32,7 +32,7 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) =>{
     try {
-        const blogs = await Blog.find({status: "published"});
+        const blogs = await Blog.find();
         res.status(200).json(blogs)
     } catch (error) {
         console.error(error.message)
@@ -43,7 +43,6 @@ router.get("/:slug", async (req, res) => {
     try {
 
         const blog = await Blog.findOne({
-            status: "published",
             slug: req.params.slug
         });
 
